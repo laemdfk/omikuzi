@@ -10,26 +10,26 @@ public class omikuzi_revision {
         int nで定義したRandomメソッドと数字を同じにしておく
         (処理の差異か、一回しかforが回らなくなる)
  */
-		int i = rand.nextInt(100) + 1;
+		int i = rand.nextInt(10) + 1;
 //
 
 //		変数numberを設定、for文でnumberとiが一定になるまで繰り返し
 		for(int number = 0 ; number < i ; number++) {
 //			新しくfor内で変数nを作成、Randomメソッドで数字を出力。
-			int n = rand.nextInt(100) + 1;
+			int n = rand.nextInt(10) + 1;
 			System.out.println(n);
 
 //			下記、条件分岐の数字出力ができなくなるので、ここのSystem.out~は残す
 
-			if (n <= 100 && 90 < n) {
+			if (n <= 10 && 9 < n) {
 				System.out.println("大吉！");
 			}
 
-			else if (n < 80 && 60 <= n) {
+			else if (n < 8 && 6 <= n) {
 				System.out.println("中吉");
 			}
 
-			else if (30 <= n && n < 60) {
+			else if (3 <= n && n < 6) {
 				System.out.println("小吉");
 			}
 
